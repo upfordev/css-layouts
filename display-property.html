@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Display Property</title>
+  </head>
+  <body>
+    <p>Display property changes display behaviours of elements in normal flow</p>
+    <section class="container1">
+      <p>By default, inline elements ignore width/height</p>
+      <div>Block Element</div>
+      <div>Block Element</div>
+      <span>Inline Elemnt</span>
+      <span>Inline Elemnt</span>
+    </section>
+    <section class="container2">
+      <p>Changing display block to inline, inline to block</p>
+      <div>Block Element</div>
+      <div>Block Element</div>
+      <span>Inline Elemnt</span>
+      <span>Inline Elemnt</span>
+    </section>
+    <section class="container3">
+      <p>Using inline-block: width and height applies (block), element side by side (inline)</p>
+      <ul>
+        <li>Space between elemenets come from the HTML space between tags</li>
+        <li>Requires hacky workarounds for getting rid of space (negative margin-left, 0px font size for container, hard to read html)</li>
+      </ul>
+      <div>Block Element</div>
+      <div>Block Element</div>
+      <span>Inline Elemnt</span>
+      <span>Inline Elemnt</span>
+    </section>
+  </body>
+</html>
+<style lang="css">
+  p {
+    font-weight: bold;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+  span {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+  .container2 div {
+    display: inline;
+  }
+  .container2 span {
+    display: block;
+  }
+  .container3 div {
+    display: inline-block;
+  }
+  .container3 span {
+    display: inline-block;
+  }
+</style>

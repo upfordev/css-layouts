@@ -1,0 +1,22 @@
+<html>
+  <head><title>Margin Collapsing</title></head>
+  <body>
+    <p>Margin collapsing: the area where two margins touch end up occuping the same space</p>
+    <div class="red">First div</div>
+    <div class="green">Second div</div>
+    <div class="blue">Third div</div>
+  </body>
+</html>
+<style lang="css">
+  body {
+    border: 1px solid black;
+  }
+  div {
+    /* Margin between divs will be collapsed to 10px */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .red { background-color: red; }
+  .blue { background-color: blue; }
+  .green { background-color: green; }
+</style>

@@ -1,0 +1,24 @@
+<html>
+  <head><title>Box Model</title></head>
+  <body>
+    <p>Using border-box I get to maintain hieght/width as defined, padding and border push content inward</p>
+    <div></div>
+  </body>
+</html>
+<style lang="css">
+  /*border box fix*/
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  div {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border: 40px solid black;
+    margin: 10px auto;
+  }
+</style>
