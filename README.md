@@ -76,9 +76,9 @@ My notes for [LinkedIn Course](https://www.linkedin.com/learning/css-layouts-fro
     * Items
       * Flexible, equal height (determined by the largest column)
       * Sizing
-        * **flex-basis** initial size (unit less: ex 1) "ideal sizing"
+        * **flex-basis** initial size "ideal sizing" (takes any css unit)
         * **flex-grow** how items expand if there is extra space (unit less: ex 1)
-        * **flex-shrink** how items shrink is there is not
+        * **flex-shrink** how items shrink is there is not (unit less: ex 1)
         * shorthand **flex: grow shrink basis;**
         * flex-grow determines a ratio. If flex-basis <> 0, 1 vs 2 doesn't mean double the size but how the amount of **available space** will be distributed to each item (1/3 vs 2/3). For a flex basis of 0, **all space** gets distributed
         * **order** changes order of items without changing HTML
